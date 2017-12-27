@@ -1,0 +1,14 @@
+/**
+ * 获取自增长的下一位顺序号
+ */
+public static String getNextSequence(String currSequence,int len){
+        Integer curr = Integer.parseInt(currSequence);
+        curr++;
+        String currStr = curr.toString();
+        StringBuffer result = new StringBuffer();
+        for(int i=0;i<len-currStr.length();i++){
+            result.append("0");
+        }
+        result.append(currStr);
+        return result.toString();
+    }
