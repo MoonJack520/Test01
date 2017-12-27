@@ -1,0 +1,4 @@
+String a="Hello";
+			int n=3;
+			String b=a.substring(a.length()-n,a.length());
+      System.out.println(b);
