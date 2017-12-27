@@ -1,0 +1,15 @@
+public static String generateString(int length) // 参数为返回随机数的长度
+    {
+        StringBuffer sb = new StringBuffer();
+        Random random = new Random();
+        for (int i = 0; i < length; i++) {
+            sb.append(numberChar.charAt(random.nextInt(numberChar.length())));
+        }
+        return sb.toString();
+    }
+    
+    //另一个方法
+    /**
+     * 得到6位随机数
+     */
+    String sixRandom =(int)((Math.random()*9+1)*100000)+"";
